@@ -1,0 +1,36 @@
+@media (max-width:767px) {
+    .slider-nav .prev-slide , .slider-nav .next-slide{
+        top: 50%;
+        position: absolute;
+        transform: translatey(-50%);
+        display: block !important;
+    }
+
+    .item{
+        display: flex;
+        justify-content: center;
+    }
+
+    .about::after{
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    .slider-nav > span{
+        top: 50%;
+        position: absolute;
+        transform: translatey(-50%);
+    }
+
+    .item{
+        display: flex;
+        justify-content: center;
+    }
+
+    div.next-slider {
+        bottom: 50% !important;
+        transform: translateY(-50%);
+        right: -4% !important;
+    }
+}
